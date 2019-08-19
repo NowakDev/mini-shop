@@ -27,9 +27,7 @@ class ProductsList extends React.Component {
     return (
       <Fragment>
         {this.props.myProducts.map((product, index) => (
-          <Product key={`prod-${index}`} data={product}>
-            <button>+</button>
-          </Product>
+          <Product key={`prod-${index}`} data={product} />
         ))}
       </Fragment>
     )
