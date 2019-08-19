@@ -1,11 +1,18 @@
 import React, { Fragment } from 'react'
 
 import Product from '../components/Product'
-const products = [
-  { name: 'one', description: 'product description1', price: '100 pln' },
-  { name: 'two', description: 'product description2', price: '200 pln' },
-  { name: 'three', description: 'product description3', price: '300 pln' }
-]
+import { connect } from 'react-redux'
+import { fetchProducts } from '../actions'
+
+
+const mapStateToProps = (state, ownProps) => ({
+  myProducts: state.products.products,
+  isUser: ownProps.isUser
+})
+
+const mapDispatchToProps = (dispatch) => ({
+  fetchProducts: () => dispatch(fetchProducts())
+})
 
 class ProductsList extends React.Component {
   state = {
@@ -13,20 +20,23 @@ class ProductsList extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({
-      products: products
-    })
+    this.props.fetchProducts()
   }
 
   render() {
     return (
       <Fragment>
-        {this.state.products.map((product, index) => (
-          <Product key={`prod-${index}`} data={product} />
+        {this.props.myProducts.map((product, index) => (
+          <Product key={`prod-${index}`} data={product}>
+            <button>+</button>
+          </Product>
         ))}
       </Fragment>
     )
   }
 }
 
-export default ProductsList
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ProductsList)

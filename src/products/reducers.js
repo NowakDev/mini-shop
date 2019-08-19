@@ -1,4 +1,4 @@
-const FETCH = 'products/FETCH'
+import { FETCH_PRODUCTS } from '../products/constants'
 
 const initialState = {
   products: [],
@@ -14,7 +14,7 @@ const products = [
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case FETCH:
+    case FETCH_PRODUCTS:
       return {
         ...state,
         products: products,
