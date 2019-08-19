@@ -4,15 +4,19 @@ import Product from '../components/Product'
 
 class ProductsList extends React.Component {
   state = {
-
+    data: {
+      name: 'one',
+      description: 'product description',
+      price: '1000 pln'
+    }
   }
 
   render() {
     return (
       <Fragment>
-        <Product data={{ name: 'One', description: 'produkt', price: '111' }} />
-        <Product data={{ name: 'One', description: 'produkt', price: '111' }} />
-        <Product data={{ name: 'One', description: 'produkt', price: '111' }} />
+        <Product data={this.state.data} />
+        <Product data={this.state.data} />
+        <Product data={this.state.data} />
       </Fragment>
     )
   }
