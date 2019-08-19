@@ -1,9 +1,10 @@
 import React from 'react'
+import ProductsList from './products/containers/ProductsList';
 
 const App = props => {
   return (
     <div>
-      App
+      <ProductsList />
     </div>
   )
 }
