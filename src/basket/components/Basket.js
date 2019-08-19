@@ -1,5 +1,4 @@
 import React from 'react'
-import { connect } from 'react-redux'
 
 const Basket = props => {
   return (
@@ -13,11 +12,5 @@ const Basket = props => {
   )
 }
 
-const mapStateToProps = state => ({})
 
-const mapDispatchToProps = dispatch => ({})
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Basket)
+export default Basket

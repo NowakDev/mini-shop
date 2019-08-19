@@ -7,9 +7,9 @@ const initialState = {
 }
 
 const products = [
-  { name: 'one', description: 'product description1', price: '100 pln' },
-  { name: 'two', description: 'product description2', price: '200 pln' },
-  { name: 'three', description: 'product description3', price: '300 pln' }
+  { id: 1, name: 'one', description: 'product description1', price: 100 },
+  { id: 2, name: 'two', description: 'product description2', price: 200 },
+  { id: 3, name: 'three', description: 'product description3', price: 300 }
 ]
 
 export default (state = initialState, action) => {
