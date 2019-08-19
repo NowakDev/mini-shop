@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mini-shop/static/css/main.2cce8147.chunk.css",
+    "main.js": "/mini-shop/static/js/main.495f2a9d.chunk.js",
+    "main.js.map": "/mini-shop/static/js/main.495f2a9d.chunk.js.map",
+    "runtime~main.js": "/mini-shop/static/js/runtime~main.51fda3ee.js",
+    "runtime~main.js.map": "/mini-shop/static/js/runtime~main.51fda3ee.js.map",
+    "static/js/2.063b1d48.chunk.js": "/mini-shop/static/js/2.063b1d48.chunk.js",
+    "static/js/2.063b1d48.chunk.js.map": "/mini-shop/static/js/2.063b1d48.chunk.js.map",
+    "index.html": "/mini-shop/index.html",
+    "precache-manifest.893c732391390028332b3ba20f5c5e26.js": "/mini-shop/precache-manifest.893c732391390028332b3ba20f5c5e26.js",
+    "service-worker.js": "/mini-shop/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/mini-shop/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/mini-shop/static/media/logo.5d5d9eef.svg"
+  }
+}
